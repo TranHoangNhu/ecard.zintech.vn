@@ -38,7 +38,12 @@ function downloadCSV() {
     + "URL:http://www.zintech.vn\n"
     + "END:VCARD";
 
-const encodeVcf = window.btoa(vCardText.toString());
+// const encodeVcf = window.btoa(vCardText.toString()); cmt dòng này lại
+
+//add line 43,44 ngày 16/11/2022 by nhu
+var stringVcf = vCardText.toString();  
+var encodeVcf = window.btoa(unescape(encodeURIComponent(stringVcf)));
+
 console.log(encodeVcf);
 
     var base64 = "QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpQUk9ESUQ6LS8vQXBwbGUgSW5jLi8vaVBob25lIE9TIDkuMi4xLy9FTg0KTjpaaW50ZWNoO0NvbXBhbnk7OzsNCkZOOiBaaW50ZWNoDQpPUkc6IGxlYWQgeW91ciBzb2x1dGlvbjsNClRFTDt0eXBlPVdPUks7dHlwZT1WT0lDRTt0eXBlPXByZWY6MDg1ODYyNjc2OA0KRU5EOlZDQVJEDQo="; //Creates CSV File Format

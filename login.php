@@ -38,7 +38,7 @@
                             </div>
                             <div class="form-group">
                                 <input id="password-field" type="password" name="password" class="form-control"
-                                    placeholder="Mật khẩu" required="">
+                                    placeholder="Mật khẩu" required="">     
                                 <span class="fa fa-fw field-icon toggle-password fa-eye"></span>
                             </div>
                             <div class="g-recaptcha my-3" data-sitekey="6Lddyg0jAAAAANxxDXheHJ0fQRdYGIstQJ6cKg74"></div>
