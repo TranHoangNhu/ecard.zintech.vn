@@ -1,0 +1,74 @@
+:root {
+    --padding: 60px;
+}
+
+body * {
+    font-family: "Tahoma", sans-serif;
+}
+
+h5 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+#card {
+    margin-top: -60px;
+    width: 0px;
+    height: 340px; 
+    position: relative;
+    background-size: cover;
+}
+
+#overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+#logo {
+    position: absolute;
+    top: var(--padding);
+    left: var(--padding);
+    width: 250px;
+}
+
+#qr-code {
+    position: absolute;
+    /* right: var(--padding); */
+    top: var(--padding);
+    border: 15px solid white;
+}
+
+.hack {
+    visibility: hidden;
+}
+
+#form-card {
+    margin: 20px 0;
+}
+
+#background-select {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+}
+
+#background-select img {
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 8px 8px 0;
+    opacity: 0.75;
+    cursor: pointer;
+    object-fit: cover;
+    text-align: left;
+}
+
+#background-select img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
