@@ -15,6 +15,9 @@
 <!--fonts-->
  <link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 <!--//fonts--> 
+<!-- Recaptcha v2 -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- End Recaptcha v2 -->
 </head>
 <body class="img js-fullheight"
     style="background-image: url('images/nfc-background.jpg'); height: 100vh; text-align:center !important;"
@@ -38,6 +41,7 @@
                                     placeholder="Mật khẩu" required="">
                                 <span class="fa fa-fw field-icon toggle-password fa-eye"></span>
                             </div>
+                            <div class="g-recaptcha my-3" data-sitekey="6Lddyg0jAAAAANxxDXheHJ0fQRdYGIstQJ6cKg74"></div>
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Đăng nhập</button>
                             </div>
